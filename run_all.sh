@@ -15,10 +15,10 @@ python src/wordcount.py data/last.txt results/last.dat
 python src/wordcount.py data/sierra.txt results/sierra.dat
 
 # create plots
-python src/plotcount.py results/isles.dat results/figures/isles.pdf
-python src/plotcount.py results/abyss.dat results/figures/abyss.pdf
-python src/plotcount.py results/last.dat results/figures/last.pdf
-python src/plotcount.py results/sierra.dat results/figures/sierra.pdf
+python src/plotcount.py results/isles.dat results/figure/isles.png
+python src/plotcount.py results/abyss.dat results/figure/abyss.png
+python src/plotcount.py results/last.dat results/figure/last.png
+python src/plotcount.py results/sierra.dat results/figure/sierra.png
 
 # make report
 Rscript -e 'ezknitr::ezknit("src/count_report.Rmd", out_dir = "doc")'
