@@ -1,0 +1,22 @@
+---
+title: "Word count report"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The most frequent words in the 4 novels we studied:
+
+Isles:
+![alt tag](results/isles.pdf)
+
+Abyss:
+![alt tag](results/abyss.pdf)
+
+Last:
+![alt tag](results/last.pdf)
+
+Sierra:
+![alt tag](results/sierra.pdf)
