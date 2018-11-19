@@ -28,8 +28,8 @@ results/figure/sierra.png: results/sierra.dat src/plotcount.py
 	python src/plotcount.py results/sierra.dat results/figure/sierra.png
 
 # make count_report
-doc/count_report.md: src/count_report.Rmd results/figure/isles.png results/figure/abyss.png results/figure/last.png results/figure/sierra.png
-	Rscript -e "ezknitr::ezknit('src/count_report.Rmd', out_dir = 'doc')"
+doc/count_report.md: doc/count_report.Rmd results/figure/isles.png results/figure/abyss.png results/figure/last.png results/figure/sierra.png
+	Rscript -e "rmarkdown::render('doc/count_report.Rmd')"
 
 #Clean up intermediate files
 clean:
