@@ -24,5 +24,6 @@ make clean
 
 
 
-The tutorial for this example can be found here:
-https://github.ubc.ca/ubc-mds-2017/DSCI_522_dsci-workflows_students/blob/master/lectures/lecture8.ipynb
+The tutorials for this example can be found here:
+- https://github.ubc.ca/MDS-2018-19/DSCI_522_dsci-workflows_instructors/blob/master/lectures/lecture5.md
+- https://github.ubc.ca/ubc-mds-2017/DSCI_522_dsci-workflows_students/blob/master/lectures/lecture8.ipynb
