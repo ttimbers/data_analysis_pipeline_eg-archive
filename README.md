@@ -25,9 +25,9 @@ Rscript -e "rmarkdown::render('doc/count_report.Rmd')"
 
 ### Depenedencies
 - R & R libraries:
-    - rmarkdown
-    - knitr
-    - here
+    - `rmarkdown`
+    - `knitr`
+    - `here`
 - Python & Python libraries:
     - `matplotlib`
     - `numpy`
