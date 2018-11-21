@@ -1,9 +1,16 @@
 #!/usr/bin/env python
-
 import sys
 
 DELIMITERS = ". , ; : ? $ @ ^ < > # % ` ! * - = ( ) [ ] { } / \" '".split()
 
+
+def main():
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    min_length = 1
+    if len(sys.argv) > 3:
+        min_length = int(sys.argv[3])
+    word_count(input_file, output_file, min_length)
 
 def load_text(filename):
     """
@@ -123,9 +130,4 @@ def word_count(input_file, output_file, min_length=1):
     save_word_counts(output_file, percentage_counts)
 
 if __name__ == '__main__':
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
-    min_length = 1
-    if len(sys.argv) > 3:
-        min_length = int(sys.argv[3])
-    word_count(input_file, output_file, min_length)
+    main()

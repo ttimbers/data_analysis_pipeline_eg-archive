@@ -8,6 +8,23 @@ from collections import Sequence
 
 from wordcount import load_word_counts
 
+def main():
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    limit = 10
+    if len(sys.argv) > 3:
+        limit = int(sys.argv[3])
+    counts = load_word_counts(input_file)
+    plot_word_counts(counts, limit)
+    if output_file == "show":
+        plt.show()
+    elif output_file == 'ascii':
+        words, counts, _ = list(zip(*counts))
+        for line in plot_ascii_bars(counts[:limit], words[:limit],
+                                    truncate=False):
+            print(line)
+    else:
+        plt.savefig(output_file)
 
 def plot_word_counts(counts, limit=10):
     """
@@ -88,19 +105,4 @@ def plot_ascii_bars(values, labels=None, screenwidth=80, gap=2, truncate=True):
 
 
 if __name__ == '__main__':
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
-    limit = 10
-    if len(sys.argv) > 3:
-        limit = int(sys.argv[3])
-    counts = load_word_counts(input_file)
-    plot_word_counts(counts, limit)
-    if output_file == "show":
-        plt.show()
-    elif output_file == 'ascii':
-        words, counts, _ = list(zip(*counts))
-        for line in plot_ascii_bars(counts[:limit], words[:limit],
-                                    truncate=False):
-            print(line)
-    else:
-        plt.savefig(output_file)
+    main()

@@ -1,15 +1,8 @@
-## Building a Data Analysis pipeline using a Shell script tutorial
+## Building a Data Analysis pipeline tutorial
 adapted from [Software Carpentry](http://software-carpentry.org/)
 
-To run the analysis without Docker, clone the repo, install all dependencies, navigate to the root of this project and run:
-```
-make all
-```
-
-to undo analysis, and reset to what was downloaded, type:
-```
-make clean
-```
+This example data analysis project analyzes the word count for all words in 4
+novels. It reports the top 10 most occurring words in each book in a [report](doc/count_report.Rmd).
 
 ### Depenedencies
 - R & R libraries:
@@ -17,13 +10,11 @@ make clean
     - knitr
     - here
 - Python & Python libraries:
-    - matplotlib
-    - numpy
-    - sys
-    - collections
-
-
+    - `matplotlib`
+    - `numpy`
+    - `sys`
+    - `collections`
+    - `wordcount`
 
 The tutorials for this example can be found here:
-- https://github.ubc.ca/MDS-2018-19/DSCI_522_dsci-workflows_instructors/blob/master/lectures/lecture5.md
-- https://github.ubc.ca/ubc-mds-2017/DSCI_522_dsci-workflows_students/blob/master/lectures/lecture8.ipynb
+- https://github.ubc.ca/MDS-2018-19/DSCI_522_dsci-workflows_students
