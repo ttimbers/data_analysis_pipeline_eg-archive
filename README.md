@@ -11,15 +11,7 @@ novels. It reports the top 10 most occurring words in each book in a [report](do
 2. Run the following commands:
 
 ```
-python src/wordcount.py data/isles.txt results/isles.dat
-python src/wordcount.py data/abyss.txt results/abyss.dat
-python src/wordcount.py data/last.txt results/last.dat
-python src/wordcount.py data/sierra.txt results/sierra.dat
-python src/plotcount.py results/isles.dat results/figure/isles.png
-python src/plotcount.py results/abyss.dat results/figure/abyss.png
-python src/plotcount.py results/last.dat results/figure/last.png
-python src/plotcount.py results/sierra.dat results/figure/sierra.png
-Rscript -e "rmarkdown::render('doc/count_report.Rmd')"
+bash run_all.sh
 ```
 
 
@@ -34,6 +26,7 @@ Rscript -e "rmarkdown::render('doc/count_report.Rmd')"
     - `sys`
     - `collections`
     - `wordcount`
+- Bash Unix shell
 
 The tutorials for this example can be found here:
 - https://github.ubc.ca/MDS-2018-19/DSCI_522_dsci-workflows_students
