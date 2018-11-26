@@ -5,7 +5,6 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.width = 2)
-#knitr::opts_knit$set(root.dir = here::here())
 ```
 
 ## The most frequent words in the 4 novels we studied:
@@ -14,30 +13,25 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 2)
 
 
 ```{r Isles}
-# Small fig.width
-knitr::include_graphics(here::here("results/figure/isles.png"))
+knitr::include_graphics("../results/figure/isles.png")
 ```
 
 #### Abyss:
 
 ```{r Abyss}
-# Small fig.width
-knitr::include_graphics(here::here("results/figure/abyss.png"))
+knitr::include_graphics("../results/figure/abyss.png")
 ```
-
 
 
 #### Last:
 
 ```{r Last}
-# Small fig.width
-knitr::include_graphics(here::here("results/figure/last.png"))
+knitr::include_graphics("../results/figure/last.png")
 ```
 
 
 #### Sierra:
 
 ```{r Sierra}
-# Small fig.width
 knitr::include_graphics(here::here("results/figure/sierra.png"))
 ```
