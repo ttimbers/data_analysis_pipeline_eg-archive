@@ -8,12 +8,17 @@ novels. It reports the top 10 most occurring words in each book in a [report](do
 
 1. Clone this repo, and using the command line, navigate to the root of this project.
 
-2. Run the following commands:
+2. To run the analysis, type the following commands:
 
 ```
-bash run_all.sh
+make all
 ```
 
+3. To reset/undo the analysis, type the following commands:
+
+```
+make clean
+```
 
 ### Depenedencies
 - R & R libraries:
@@ -27,6 +32,7 @@ bash run_all.sh
     - `collections`
     - `wordcount`
 - Bash Unix shell
+- Make
 
 The tutorials for this example can be found here:
 - https://github.ubc.ca/MDS-2018-19/DSCI_522_dsci-workflows_students
