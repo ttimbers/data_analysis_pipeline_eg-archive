@@ -5,6 +5,7 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.width = 2)
+library(cowsay)
 ```
 
 ## The most frequent words in the 4 novels we studied:
