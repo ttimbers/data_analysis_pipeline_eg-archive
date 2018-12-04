@@ -39,5 +39,5 @@ knitr::include_graphics("../results/figure/sierra.png")
 
 And to end this happy story...
 ```{r endless horse neigh}
-say(what = "say(what = "Neigh!", by = "endlesshorse")", by = "endlesshorse")
+say(what = "Neigh!", by = "endlesshorse")
 ```
