@@ -9,6 +9,7 @@ novels. It reports the top 10 most occurring words in each book in a [report](do
 There are two suggested ways to run this analysis:
 
 #### 1. Using Docker
+*note - the instructions in this section also depends on running this in a unix shell, if you are using Windows Command Prompt, replace `$(pwd)` with PATH_ON_YOUR_COMPUTER.*
 
 1. Install [Docker](https://www.docker.com/get-started)
 2. Download/clone this repository
