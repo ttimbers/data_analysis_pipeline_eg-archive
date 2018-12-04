@@ -38,6 +38,6 @@ knitr::include_graphics("../results/figure/sierra.png")
 ```
 
 And to end this happy story...
-```{r arrested development endless horse random quote}
-say(what = "arresteddevelopment", by = "endlesshorse")
+```{r endless horse neigh}
+say(what = "say(what = "Neigh!", by = "endlesshorse")", by = "endlesshorse")
 ```
