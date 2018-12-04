@@ -37,9 +37,6 @@ knitr::include_graphics("../results/figure/sierra.png")
 ```
 
 And to end this happy story...
-```{r cats}
-library(CatterPlots)
-x <- -10:10
-y <- -x^2 + 10
-rainbowCats(x, y, yspread=0.05, xspread=0.05, ptsize=2, catshiftx=0.5, catshifty=-0.2, canvas=c(-0.5,1.5,-1,1.5))
+```{r arrested development endless horse random quote}
+say(what = "arresteddevelopment", by = "endlesshorse")
 ```
